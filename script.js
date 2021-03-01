@@ -36,7 +36,10 @@ function generatePassword() {
       charSet.concat(charSet += spSet);
       console.log(charSet);
     } 
-    if (I == 'n' && T == 'n' && u == '')
+    if (I == 'n' && T == 'n' && U == 'n' && V == 'n') {
+      alert('plz pick at least one character set, bro.');
+      return generatePassword();
+    }
 
       for (i=0; i<L; i++) {
       var Y = Math.floor(Math.random()*charSet.length);
